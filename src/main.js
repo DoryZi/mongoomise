@@ -63,6 +63,7 @@ exports.promisifyAll = function (mongoose, Promise, suffix) {
 
 	/*
 	 * promisify `mongoose.Model` static methods by appending a suffix, default `Async`
+	 * aggregate async was not supported so need to add it for it to work properly for me - DZ
 	 * */
 	var modelStaticsList = [
 		'aggregate', 'count', 'create', 'distinct', 'ensureIndexes',
